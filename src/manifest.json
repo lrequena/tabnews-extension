@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "TabNews Extension",
+  "version": "0.1",
+  "description": "Extensão para o TabNews.com.br",
+  "author": "Leandro Requena",
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*.tabnews.com.br/*" ],
+      "css": [ "tabnewsext.css" ],
+      "js": [ "tabnewsext.js" ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ ],
+      "matches": [ "*://*.tabnews.com.br/*" ]
+    }
+  ]
+}
